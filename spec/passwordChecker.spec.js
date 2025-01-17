@@ -55,4 +55,32 @@ describe('Password Validation', () => {
       expect(isValidPassword('V3ryS3cur3!')).toBe(true);
     });
   });
+
+  describe('Edge cases and invalid inputs', () => {
+    it('should handle empty string', () => {
+      expect(isValidPassword('')).toBe(false);
+    });
+
+    it('should handle null input', () => {
+      expect(isValidPassword(null)).toBe(false);
+    });
+
+    it('should handle undefined input', () => {
+      expect(isValidPassword(undefined)).toBe(false);
+    });
+
+    it('should handle non-string input', () => {
+      expect(isValidPassword(123)).toBe(false);
+      expect(isValidPassword({})).toBe(false);
+      expect(isValidPassword([])).toBe(false);
+    });
+
+    it('should handle whitespace-only input', () => {
+      expect(isValidPassword('        ')).toBe(false);
+    });
+
+    it('should handle string with spaces', () => {
+      expect(isValidPassword('Pass 123 !')).toBe(false);
+    });
+  });
 }); 
