@@ -14,8 +14,8 @@ function isValidPassword(password) {
     return false;
   }
 
-  // Trim and check for spaces
-  if (password.trim() !== password) {
+  // Check for any spaces in the password
+  if (password.includes(' ')) {
     return false;
   }
 
