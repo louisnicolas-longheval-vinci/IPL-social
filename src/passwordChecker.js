@@ -4,10 +4,21 @@
  * - Contains at least one special character
  * - Contains at least one number
  * - Does not contain "IPL" in any case
+ * - No spaces allowed
  * @param {string} password - The password to validate
  * @returns {boolean} - True if password is valid, false otherwise
  */
 function isValidPassword(password) {
+  // Handle invalid inputs
+  if (!password || typeof password !== 'string') {
+    return false;
+  }
+
+  // Check for any spaces in the password
+  if (password.includes(' ')) {
+    return false;
+  }
+
   // Check minimum length
   if (password.length < 8) {
     return false;
