@@ -1,0 +1,48 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "ansi-styles": "^4.3.0",
+    "balanced-match": "^1.0.2",
+    "color-convert": "^2.0.1",
+    "color-name": "^1.1.4",
+    "cross-spawn": "^7.0.6",
+    "eastasianwidth": "^0.2.0",
+    "emoji-regex": "^8.0.0",
+    "foreground-child": "^3.3.0",
+    "is-fullwidth-code-point": "^3.0.0",
+    "isexe": "^2.0.0",
+    "jackspeak": "^3.4.3",
+    "jasmine": "^5.5.0",
+    "jasmine-core": "^5.5.0",
+    "minipass": "^7.1.2",
+    "package-json-from-dist": "^1.0.1",
+    "path-key": "^3.1.1",
+    "path-scurry": "^1.11.1",
+    "shebang-command": "^2.0.0",
+    "shebang-regex": "^3.0.0",
+    "string-width": "^4.2.3",
+    "string-width-cjs": "^4.2.3",
+    "strip-ansi": "^6.0.1",
+    "strip-ansi-cjs": "^6.0.1",
+    "which": "^2.0.2",
+    "wrap-ansi-cjs": "^7.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jasmine spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisnicolas-longheval-vinci/IPL-social.git"
+  },
+  "author": "Louis-Nicolas Longheval",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/louisnicolas-longheval-vinci/IPL-social/issues"
+  },
+  "homepage": "https://github.com/louisnicolas-longheval-vinci/IPL-social#readme"
+}
