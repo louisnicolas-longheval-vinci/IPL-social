@@ -8,9 +8,18 @@
  * @returns {boolean} - True if password is valid, false otherwise
  */
 function isValidPassword(password) {
-  // For now, only implementing the first rule (minimum length)
-  // Other rules will be added incrementally following TDD
-  return password.length >= 8;
+  // Check minimum length
+  if (password.length < 8) {
+    return false;
+  }
+
+  // Check for at least one special character
+  const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+  if (!specialCharRegex.test(password)) {
+    return false;
+  }
+
+  return true;
 }
 
 module.exports = {
