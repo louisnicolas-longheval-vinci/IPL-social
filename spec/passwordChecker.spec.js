@@ -12,4 +12,10 @@ describe('Password Validation', () => {
   it('should reject passwords without numbers', () => {
     expect(isValidPassword('Abcd!@#$')).toBe(false);
   });
+
+  it('should reject passwords containing "IPL" in any case', () => {
+    expect(isValidPassword('IPL123!@#')).toBe(false);
+    expect(isValidPassword('TestiPl123!')).toBe(false);
+    expect(isValidPassword('MyipL123!@')).toBe(false);
+  });
 }); 
