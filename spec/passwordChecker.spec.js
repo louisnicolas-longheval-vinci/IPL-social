@@ -18,4 +18,9 @@ describe('Password Validation', () => {
     expect(isValidPassword('TestiPl123!')).toBe(false);
     expect(isValidPassword('MyipL123!@')).toBe(false);
   });
+
+  it('should accept valid passwords', () => {
+    expect(isValidPassword('MyPass123!')).toBe(true);
+    expect(isValidPassword('C0mpl3x!@#')).toBe(true);
+  });
 }); 
