@@ -19,6 +19,12 @@ function isValidPassword(password) {
     return false;
   }
 
+  // Check for at least one number
+  const numberRegex = /\d/;
+  if (!numberRegex.test(password)) {
+    return false;
+  }
+
   return true;
 }
 
