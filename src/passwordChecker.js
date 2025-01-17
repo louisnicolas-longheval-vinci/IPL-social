@@ -25,6 +25,11 @@ function isValidPassword(password) {
     return false;
   }
 
+  // Check for "IPL" in any case
+  if (password.toLowerCase().includes('ipl')) {
+    return false;
+  }
+
   return true;
 }
 
